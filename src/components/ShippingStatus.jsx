@@ -13,7 +13,12 @@ const ShippingStatus = () => {
       <h2 className="text-xl font-semibold mb-2">Shipping Status</h2>
       <div className="flex flex-col space-y-4">
         {steps.map((step, index) => (
-          <ShippingStep key={index} step={step} />
+          <ShippingStep
+            key={index}
+            isLast={index}
+            step={step}
+            len={steps.length}
+          />
         ))}
       </div>
     </div>
