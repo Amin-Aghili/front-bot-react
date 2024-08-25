@@ -1,4 +1,4 @@
-import { FaShopify, FaHome, FaCog, FaSearch } from "react-icons/fa";
+import { FaShopify, FaShippingFast, FaCog, FaSearch } from "react-icons/fa";
 
 const buttonStyle = "text-cyan-900 text-2xl bg-transparent py-4 px-6";
 const activeStyle = "border-b-2 border-b-blue-950";
@@ -6,7 +6,7 @@ const activeStyle = "border-b-2 border-b-blue-950";
 export default function Navbar({ setPage, activePage, cartItemCount }) {
   const navItems = [
     { name: "setting", icon: FaCog },
-    { name: "explore", icon: FaHome },
+    { name: "orders", icon: FaShippingFast },
     { name: "home", icon: FaSearch },
     { name: "cart", icon: FaShopify, hasBadge: true },
   ];

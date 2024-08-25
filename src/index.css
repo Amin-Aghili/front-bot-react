@@ -10,7 +10,7 @@
 body {
   @apply font-homa;
 }
-.wheel {
+/* .wheel {
   position: relative;
 }
 
@@ -26,4 +26,4 @@ body {
   background: conic-gradient(from 0deg, #ff0000, #ffff00, #00ff00, #0000ff);
   border: 10px solid #000;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-}
+} */

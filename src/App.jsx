@@ -3,7 +3,7 @@ import { useState } from "react";
 import Home from "./pages/Home";
 import Setting from "./pages/Setting";
 import Cart from "./pages/Cart";
-import Explore from "./pages/Explore";
+import Orders from "./pages/Orders";
 
 export default function App() {
   const [activePage, setActivePage] = useState("home");
@@ -48,8 +48,8 @@ export default function App() {
         return <Home addToCart={addToCart} />;
       case "setting":
         return <Setting />;
-      case "explore":
-        return <Explore />;
+      case "orders":
+        return <Orders />;
       case "cart":
         return (
           <Cart
@@ -63,9 +63,9 @@ export default function App() {
     }
   };
   return (
-    <div className="h-screen flex flex-col">
-      <main className="flex-grow flex items-center justify-center w-full">
-        <div className="w-full pb-32">{renderPage()}</div>
+    <div className="flex flex-col h-screen">
+      <main className="flex-grow flex items-center justify-center ">
+        <div className="w-full pb-32 ">{renderPage()}</div>
       </main>
       <div className="fixed bottom-0 left-0 w-full z-10">
         <Navbar
