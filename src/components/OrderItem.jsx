@@ -26,7 +26,6 @@ const OrderItem = ({ item, onClick }) => {
         </div>
         <div className="h-28 flex flex-col justify-between">
           <p className="text-sm text-gray-500">{item.date}</p>
-          {/* حذف دکمه‌های اضافه و کم کردن تعداد */}
         </div>
       </div>
     </Card>
